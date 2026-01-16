@@ -222,9 +222,7 @@ int main() {
     Oggetto*i;
     i= new Oggetto("Torta", "Dolci", 1);
     Oggetto*l;
-    l=new Oggetto("Uova", "Derivati", 6);
-    Oggetto*m;
-    m= new Oggetto("Tovaglioli", "Utensili",2);
+    l= new Oggetto("Tovaglioli", "Utensili",2);
 
     listaSpesa->addOggetto(a);
     listaSpesa->addOggetto(b);
