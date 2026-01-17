@@ -68,7 +68,7 @@ public:
         cout << "Nella lista "<<this->nomeLista<<" ci sono: "<< "\n";
         for (const auto i: listaspesa) {
             totale += i->getQuantità();
-            cout <<"-"<<i->getQuantità()<< " "<<i->getNome()<<" appartenenti alla categoria: "<<i->getCategoria()<< "\n";
+            cout <<"-"<<i->getQuantità()<< " "<<i->getNome()<<" appartenente alla categoria: "<<i->getCategoria()<< "\n";
         }
         cout <<"\n" "Gli oggetti totali nella lista sono: "<<totale<<"\n\n\n";
     }
@@ -160,6 +160,10 @@ public:
         liste.push_back(lista);
     }
 
+    void removeLista(const shared_ptr<Lista>& lista){
+        liste.remove(lista);
+    }
+
     void print() const{
         cout<<"Liste di "<<this->nomeutente<<":\n";
         for(const auto i: liste){
@@ -168,12 +172,6 @@ public:
         cout<<"\n";
     }
 };
-
-
-
-
-
-
 
 
 
@@ -186,11 +184,11 @@ int main() {
     auto listaNonna = make_shared<Lista>("Lista della spesa per la nonna");
     auto listaFesta = make_shared<Lista>("Lista della spesa per la festa");
 
-    ListaObserver observers("Spesa");
+    ListaObserver observers("della spesa settimanele");
     listaSpesa->addObserver(&observers);
-    ListaObserver observers1("Nonna");
+    ListaObserver observers1("della spesa per la nonna");
     listaNonna->addObserver(&observers1);
-    ListaObserver observers2("Festa");
+    ListaObserver observers2("della spesa per la festa");
     listaFesta->addObserver(&observers2);
 
     sabina.aggiungiLista(listaSpesa);
