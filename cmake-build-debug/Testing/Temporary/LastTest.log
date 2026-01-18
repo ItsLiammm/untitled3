@@ -1,3 +1,91 @@
-Start testing: Jan 18 09:48 CET
+Start testing: Jan 18 12:23 CET
 ----------------------------------------------------------
-End testing: Jan 18 09:48 CET
+1/1 Testing: AllTests
+1/1 Test: AllTests
+Command: "/Users/liam/CLionProjects/untitled3/cmake-build-debug/runTests"
+Directory: /Users/liam/CLionProjects/untitled3/cmake-build-debug
+"AllTests" start time: Jan 18 12:23 CET
+Output:
+----------------------------------------------------------
+Liste di Liam:
+-Lista della spesa per la festa
+
+Liste di Sabina:
+-Lista della spesa settimanale
+-Lista della spesa per la nonna
+
+Liste di Massimiliano:
+-Lista della spesa settimanale
+-Lista della spesa per la festa
+
+Nella lista della spesa settimanele ci sono: 
+-1 Filoncino di pane appartenente alla categoria: Panetteria
+
+Gli oggetti totali nella lista sono: 1
+
+
+Nella lista della spesa settimanele ci sono: 
+-1 Filoncino di pane appartenente alla categoria: Panetteria
+-2 Penne rigate appartenente alla categoria: Pasta
+
+Gli oggetti totali nella lista sono: 3
+
+
+Nella lista della spesa settimanele ci sono: 
+-1 Filoncino di pane appartenente alla categoria: Panetteria
+-2 Penne rigate appartenente alla categoria: Pasta
+-3 Spaghetti appartenente alla categoria: Pasta
+
+Gli oggetti totali nella lista sono: 6
+
+
+Nella lista della spesa per la nonna ci sono: 
+-2 Minestrina appartenente alla categoria: Pasta
+
+Gli oggetti totali nella lista sono: 2
+
+
+Nella lista della spesa per la festa ci sono: 
+-10 Candeline appartenente alla categoria: Cartoleria
+
+Gli oggetti totali nella lista sono: 10
+
+
+Nella lista della spesa per la festa ci sono: 
+-10 Candeline appartenente alla categoria: Cartoleria
+-1 Torta appartenente alla categoria: Dolci
+
+Gli oggetti totali nella lista sono: 11
+
+
+Nella lista della spesa per la festa ci sono: 
+-10 Candeline appartenente alla categoria: Cartoleria
+-1 Torta appartenente alla categoria: Dolci
+-2 Penne rigate appartenente alla categoria: Pasta
+
+Gli oggetti totali nella lista sono: 13
+
+
+Nella lista della spesa settimanele ci sono: 
+-2 Penne rigate appartenente alla categoria: Pasta
+-3 Spaghetti appartenente alla categoria: Pasta
+
+Gli oggetti totali nella lista sono: 5
+
+
+Nella lista della spesa per la festa ci sono: 
+-10 Candeline appartenente alla categoria: Cartoleria
+-1 Torta appartenente alla categoria: Dolci
+
+Gli oggetti totali nella lista sono: 11
+
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"AllTests" end time: Jan 18 12:23 CET
+"AllTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 18 12:23 CET
