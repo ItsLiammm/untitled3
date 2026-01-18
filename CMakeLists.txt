@@ -3,4 +3,38 @@ project(untitled3)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(untitled3 main.cpp Oggetto.h Oggetto.cpp Observer.h Subject.h ListaObserver.h ListaObserver.cpp Lista.h Lista.cpp Utente.h Utente.cpp)
+add_library(my_lib
+        Oggetto.cpp
+        Lista.cpp
+        ListaObserver.cpp
+        Utente.cpp
+        )
+
+target_include_directories(my_lib PUBLIC src)
+
+include(FetchContent)
+FETCHCONTENT_DECLARE(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG v1.14.0
+)
+FETCHCONTENT_MAKEAVAILABLE(googletest)
+
+enable_testing()
+
+add_executable(runTests
+        main.cpp
+        OggettoTest.cpp
+        ListaTest.cpp
+        ListaObserverTest.cpp
+        UtenteTest.cpp
+        )
+
+target_link_libraries(runTests
+        my_lib
+        gtest
+        gmock
+        gtest_main
+    )
+
+add_test(NAME AllTests COMMAND runTests)
