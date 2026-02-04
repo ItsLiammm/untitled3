@@ -4,6 +4,7 @@ project(untitled3)
 set(CMAKE_CXX_STANDARD 17)
 
 add_library(my_lib
+        main.cpp
         Oggetto.cpp
         Lista.cpp
         ListaObserver.cpp
@@ -22,8 +23,16 @@ FETCHCONTENT_MAKEAVAILABLE(googletest)
 
 enable_testing()
 
-add_executable(runTests
+
+add_executable(Progetto
         main.cpp
+        ListaObserver.cpp
+        Lista.cpp
+        Oggetto.cpp
+        Utente.cpp
+        )
+
+add_executable(runTests
         OggettoTest.cpp
         ListaTest.cpp
         ListaObserverTest.cpp
@@ -37,4 +46,7 @@ target_link_libraries(runTests
         gtest_main
     )
 
-add_test(NAME AllTests COMMAND runTests)
+#add_test(NAME AllTests COMMAND runTests)
+
+include(GoogleTest)
+gtest_discover_tests(runTests)

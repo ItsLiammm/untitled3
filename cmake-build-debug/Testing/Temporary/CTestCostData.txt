@@ -1,0 +1,8 @@
+AllTests 5 0.164273
+OggettoTest.Costruttore 5 0.0040477
+OggettoTest.Setter 5 0.00508398
+ListaTest.Add 5 0.00384145
+ListaTest.Remove 5 0.00363314
+ListaObserverTest.Notify 5 0.00336676
+UtenteTest.Add 5 0.00325449
+---
